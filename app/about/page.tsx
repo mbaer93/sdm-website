@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Matt Baer & Social Drive Media",
+  title: "About Matt Baer & Social Drive",
   description:
-    "Meet Matt Baer — firefighter, small business owner, and founder of Social Drive Media. Learn how a decade in the fire service and running a small business shaped an AI marketing company built for small business owners.",
+    "Meet Matt Baer — firefighter, small business owner, and founder of Social Drive. Learn how a decade in the fire service and running a small business shaped an AI marketing company built for small business owners.",
   alternates: {
     canonical: "https://www.socialdrivemedia.com/about",
   },
   openGraph: {
-    title: "About Matt Baer & Social Drive Media",
+    title: "About Matt Baer & Social Drive",
     description:
-      "A firefighter, a landscaper, and now an AI marketing builder. Meet the founder of Social Drive Media.",
+      "A firefighter, a landscaper, and now an AI marketing builder. Meet the founder of Social Drive.",
     url: "https://www.socialdrivemedia.com/about",
   },
 };
@@ -20,32 +20,32 @@ const values = [
   {
     icon: "💪",
     title: "Hard Work",
-    body: "We don't cut corners. Whether it's a free audit or a full managed marketing program, we put in the work to deliver real results.",
+    body: "We don\'t cut corners. Whether it\'s a free audit or a full managed marketing program, we put in the work to deliver real results.",
   },
   {
     icon: "🎯",
     title: "Simplicity",
-    body: "Marketing doesn't have to be complicated. We cut through the noise and give you tools and strategies that are clear, actionable, and actually work.",
+    body: "Marketing doesn\'t have to be complicated. We cut through the noise and give you tools and strategies that are clear, actionable, and actually work.",
   },
   {
     icon: "🤝",
     title: "Honesty",
-    body: "If something isn't working, we'll tell you. We'd rather lose a client with our integrity intact than keep one by telling them what they want to hear.",
+    body: "If something isn\'t working, we\'ll tell you. We\'d rather lose a client with our integrity intact than keep one by telling them what they want to hear.",
   },
   {
     icon: "🔓",
     title: "No Contracts, No Lock-In",
-    body: "Everything we offer is month-to-month. We earn your business every month because we believe that's how it should work.",
+    body: "Everything we offer is month-to-month. We earn your business every month because we believe that\'s how it should work.",
   },
   {
     icon: "🏘️",
     title: "Community First",
-    body: "We're based in Greencastle, PA and we care about the small businesses that make our communities thrive — from the main street diner to the local HVAC company.",
+    body: "We\'re based in Greencastle, PA and we care about the small businesses that make our communities thrive — from the main street diner to the local HVAC company.",
   },
   {
     icon: "✝️",
     title: "Faith-Driven",
-    body: "Our values are grounded in faith. We treat every client, partner, and team member the way we'd want to be treated — with respect, care, and genuine investment in their success.",
+    body: "Our values are grounded in faith. We treat every client, partner, and team member the way we\'d want to be treated — with respect, care, and genuine investment in their success.",
   },
 ];
 
@@ -68,7 +68,7 @@ const timeline = [
   {
     year: "Today",
     title: "Building AI Tools for Small Business",
-    body: "Social Drive Media evolved from a social media agency into something bigger: an AI-powered marketing infrastructure company. Matt now builds tools like SmallBizHQ, StratIQ, and Forge to give small businesses the same marketing firepower that big companies have — at a fraction of the cost.",
+    body: "Social Drive evolved from a social media agency into something bigger: an AI-powered marketing infrastructure company. Matt now builds tools like SmallBizHQ, StratIQ, and Forge to give small businesses the same marketing firepower that big companies have — at a fraction of the cost.",
   },
 ];
 
@@ -83,7 +83,7 @@ export default function AboutPage() {
             <span className="text-gradient">Small, Local Businesses</span>
           </h1>
           <p className="text-xl text-[#94a3b8] leading-relaxed">
-            Social Drive Media was built by a small business owner, for small business owners. Not a venture-backed startup. Not a corporate agency. A real person who&rsquo;s been in your shoes.
+            Social Drive was built by a small business owner, for small business owners. Not a venture-backed startup. Not a corporate agency. A real person who&rsquo;s been in your shoes.
           </p>
         </div>
       </section>
@@ -119,10 +119,10 @@ export default function AboutPage() {
                   He launched a landscaping business from the ground up and ran it himself. That experience taught him everything about what small business owners actually face: tight margins, not enough hours in the day, and a marketing world that feels designed for companies with teams and budgets that most small businesses will never have.
                 </p>
                 <p>
-                  That gap became the mission. Social Drive Media started as a social media management agency, but Matt kept asking: &ldquo;Why do only big companies get to use AI for marketing?&rdquo; So he started building. SmallBizHQ. StratIQ. Forge. Each tool designed to give small business owners real leverage — without the agency price tag.
+                  That gap became the mission. Social Drive started as a social media management agency, but Matt kept asking: &ldquo;Why do only big companies get to use AI for marketing?&rdquo; So he started building. SmallBizHQ. StratIQ. Forge. Each tool designed to give small business owners real leverage — without the agency price tag.
                 </p>
                 <p>
-                  Today, Social Drive Media operates out of Greencastle, PA with a simple belief: small businesses deserve the same quality of marketing infrastructure that enterprise companies take for granted. And they deserve a partner who actually cares — not just a vendor who takes their money.
+                  Today, Social Drive operates out of Greencastle, PA with a simple belief: small businesses deserve the same quality of marketing infrastructure that enterprise companies take for granted. And they deserve a partner who actually cares — not just a vendor who takes their money.
                 </p>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function AboutPage() {
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#f8fafc]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-extrabold text-[#0f172a] tracking-tight mb-4">The Road to SDM</h2>
+            <h2 className="text-4xl font-extrabold text-[#0f172a] tracking-tight mb-4">The Road to Social Drive</h2>
             <p className="text-lg text-[#64748b]">Every chapter of the story shapes what we build today.</p>
           </div>
           <div className="relative">
@@ -162,7 +162,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-extrabold text-[#0f172a] tracking-tight mb-4">What We Stand For</h2>
             <p className="text-lg text-[#64748b] max-w-2xl mx-auto">
-              These aren&rsquo;t corporate values on a wall. They&rsquo;re how Matt runs his business every day — and how everyone on the SDM team is expected to operate.
+              These aren&rsquo;t corporate values on a wall. They&rsquo;re how Matt runs his business every day — and how everyone on the Social Drive team is expected to operate.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
