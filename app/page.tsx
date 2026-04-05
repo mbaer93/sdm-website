@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Social Drive Media — AI-Powered Marketing for Small Businesses",
+  title: "Social Drive — AI-Powered Marketing for Small Businesses",
   description:
-    "Social Drive Media builds AI-powered marketing tools, strategies, and systems for small businesses. Based in Greencastle, PA. Start free with SmallBizHQ.",
+    "Social Drive builds AI-powered marketing tools, strategies, and systems for small businesses. Based in Greencastle, PA. Start free with SmallBizHQ.",
   alternates: {
     canonical: "https://www.socialdrivemedia.com",
   },
   openGraph: {
-    title: "Social Drive Media — AI-Powered Marketing for Small Businesses",
+    title: "Social Drive — AI-Powered Marketing for Small Businesses",
     description:
       "We build the tools, strategies, and systems that help small businesses grow online — without the agency price tag.",
     url: "https://www.socialdrivemedia.com",
@@ -52,45 +52,45 @@ const products = [
   },
 ];
 
-const whySDM = [
+const whyUs = [
   {
     icon: "🤝",
     title: "A Partner, Not a Vendor",
-    body: "Matt picks up the phone. You won't get handed off to an account manager who doesn't know your business. We build real relationships because we genuinely care about your success.",
+    body: "Matt picks up the phone. You won\'t get handed off to an account manager who doesn\'t know your business. We build real relationships because we genuinely care about your success.",
   },
   {
     icon: "🔓",
     title: "No Contracts. Ever.",
-    body: "Month-to-month, always. We earn your business every single month. If we're not delivering real value, you shouldn't be locked in — and we're confident enough in our work that we don't need you to be.",
+    body: "Month-to-month, always. We earn your business every single month. If we\'re not delivering real value, you shouldn\'t be locked in — and we\'re confident enough in our work that we don\'t need you to be.",
   },
   {
     icon: "🏘️",
     title: "Small Business at Heart",
-    body: "Our founder ran a landscaping business and spent a decade in the fire service. We know what it means to work with your hands, serve a community, and build something real. That's who we built this for.",
+    body: "Our founder ran a landscaping business and spent a decade in the fire service. We know what it means to work with your hands, serve a community, and build something real. That\'s who we built this for.",
   },
   {
     icon: "🤖",
     title: "AI That Actually Works",
-    body: "We don't just talk about AI — we've built it. Our tools diagnose your marketing gaps and automate the fixes. Real results, not buzzwords.",
+    body: "We don\'t just talk about AI — we\'ve built it. Our tools diagnose your marketing gaps and automate the fixes. Real results, not buzzwords.",
   },
 ];
 
 const testimonials = [
   {
     quote:
-      "Social Drive Media didn't just post content — they actually understood our business and helped us show up online the right way. Matt is the real deal.",
+      "Social Drive didn\'t just post content — they actually understood our business and helped us show up online the right way. Matt is the real deal.",
     author: "Local Business Owner",
     location: "Hagerstown, MD",
   },
   {
     quote:
-      "The StratIQ report opened our eyes to what our competitors were doing that we weren't. We pivoted our marketing in two weeks and saw results within the month.",
+      "The StratIQ report opened our eyes to what our competitors were doing that we weren\'t. We pivoted our marketing in two weeks and saw results within the month.",
     author: "Restaurant Owner",
     location: "Chambersburg, PA",
   },
   {
     quote:
-      "I tried three other agencies before SDM. None of them felt like a partner. Matt does. It's a completely different experience.",
+      "I tried three other agencies before Social Drive. None of them felt like a partner. Matt does. It\'s a completely different experience.",
     author: "Home Services Business Owner",
     location: "Greencastle, PA",
   },
@@ -99,7 +99,7 @@ const testimonials = [
 const schemaMarkup = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Social Drive Media",
+  name: "Social Drive",
   url: "https://www.socialdrivemedia.com",
   address: {
     "@type": "PostalAddress",
@@ -139,7 +139,7 @@ export default function HomePage() {
             <span className="text-gradient">Powered by AI, Built for Small Business</span>
           </h1>
           <p className="text-xl text-[#94a3b8] max-w-3xl mx-auto leading-relaxed mb-10">
-            Social Drive Media builds the tools, strategies, and systems that help small businesses grow online — without the agency price tag. We start you free, diagnose your gaps, and automate the fixes.
+            Social Drive builds the tools, strategies, and systems that help small businesses grow online — without the agency price tag. We start you free, diagnose your gaps, and automate the fixes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -174,7 +174,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-extrabold text-[#0f172a] tracking-tight mb-4">
-              The SDM Product Suite
+              The Social Drive Product Suite
             </h2>
             <p className="text-lg text-[#64748b] max-w-2xl mx-auto">
               One ecosystem. Three tools. A complete path from &ldquo;just getting started&rdquo; to fully automated marketing.
@@ -228,19 +228,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why SDM */}
+      {/* Why Social Drive */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-extrabold text-[#0f172a] tracking-tight mb-4">
-              Why Small Businesses Choose SDM
+              Why Small Businesses Choose Social Drive
             </h2>
             <p className="text-lg text-[#64748b] max-w-2xl mx-auto">
               We&rsquo;re not your typical agency. We&rsquo;re a partner — built by someone who&rsquo;s been in the trenches of small business ownership.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {whySDM.map((item) => (
+            {whyUs.map((item) => (
               <div key={item.title} className="text-center">
                 <div className="text-4xl mb-4">{item.icon}</div>
                 <h3 className="text-lg font-bold text-[#0f172a] mb-3">{item.title}</h3>
@@ -288,13 +288,13 @@ export default function HomePage() {
             Built by a Small Business Owner, for Small Business Owners
           </h2>
           <p className="text-lg text-[#94a3b8] leading-relaxed mb-8">
-            Matt Baer spent a decade as a firefighter in Northern Virginia, then built and ran a landscaping business from the ground up. He knows what it takes to run a small business — and he built Social Drive Media to give business owners like him the marketing firepower they deserve.
+            Matt Baer spent a decade as a firefighter in Northern Virginia, then built and ran a landscaping business from the ground up. He knows what it takes to run a small business — and he built Social Drive to give business owners like him the marketing firepower they deserve.
           </p>
           <Link
             href="/about"
             className="inline-flex items-center px-6 py-3 text-base font-semibold text-[#0f172a] bg-white rounded-xl hover:bg-[#f8fafc] transition-colors"
           >
-            Meet Matt &amp; the Story Behind SDM →
+            Meet Matt &amp; the Story Behind Social Drive →
           </Link>
         </div>
       </section>
