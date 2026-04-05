@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact — Social Drive Media",
+  title: "Contact — Social Drive",
   description:
-    "Get in touch with Social Drive Media. Talk to Matt Baer about AI marketing tools, social media management, or any of our services for small businesses in Greencastle, PA.",
+    "Get in touch with Social Drive. Talk to Matt Baer about AI marketing tools, social media management, or any of our services for small businesses in Greencastle, PA.",
   alternates: {
     canonical: "https://www.socialdrivemedia.com/contact",
   },
   openGraph: {
-    title: "Contact — Social Drive Media",
+    title: "Contact — Social Drive",
     description:
-      "Reach out to Social Drive Media. We respond to every inquiry personally — no auto-replies, no call centers.",
+      "Reach out to Social Drive. We respond to every inquiry personally — no auto-replies, no call centers.",
     url: "https://www.socialdrivemedia.com/contact",
   },
 };
@@ -110,7 +110,7 @@ export default function ContactPage() {
               </button>
 
               <p className="text-xs text-[#94a3b8] text-center">
-                By submitting, you agree to be contacted by Social Drive Media. We don&rsquo;t spam. Ever.
+                By submitting, you agree to be contacted by Social Drive. We don&rsquo;t spam. Ever.
               </p>
             </form>
           </div>
@@ -128,8 +128,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-[#374151]">Email</p>
-                    <a href="mailto:matt@socialdrivemedia.com" className="text-[#478ac9] hover:underline text-sm">
-                      matt@socialdrivemedia.com
+                    <a href="mailto:ben@socialdrivemedia.com" className="text-[#478ac9] hover:underline text-sm">
+                      ben@socialdrivemedia.com
                     </a>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ export default function ContactPage() {
 
             {/* Social Links */}
             <div>
-              <p className="text-sm font-medium text-[#374151] mb-4">Follow Social Drive Media</p>
+              <p className="text-sm font-medium text-[#374151] mb-4">Follow Social Drive</p>
               <div className="flex gap-3">
                 <a
                   href="https://www.facebook.com/driveyoursocialimpact"
