@@ -4,14 +4,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services — AI Marketing, Social Media Management & More",
   description:
-    "Explore Social Drive Media's full service lineup: social media management, AI marketing tools (SmallBizHQ), business intelligence reports (StratIQ), and fully managed AI marketing (Forge). Serving small businesses in Greencastle, PA and beyond.",
+    "Explore Social Drive\'s full service lineup: social media management, AI marketing tools (SmallBizHQ), business intelligence reports (StratIQ), and fully managed AI marketing (Forge). Serving small businesses in Greencastle, PA and beyond.",
   alternates: {
     canonical: "https://www.socialdrivemedia.com/services",
   },
   openGraph: {
     title: "Services — AI Marketing, Social Media Management & More",
     description:
-      "From free AI tools to fully managed marketing — Social Drive Media has a solution for every stage of your small business growth.",
+      "From free AI tools to fully managed marketing — Social Drive has a solution for every stage of your small business growth.",
     url: "https://www.socialdrivemedia.com/services",
   },
 };
@@ -23,7 +23,7 @@ const services = [
     name: "Social Media Management",
     tagline: "Consistent, on-brand content without lifting a finger.",
     description:
-      "Most small business owners know they should be posting on social media — they just don't have the time or bandwidth to do it consistently. That's where we come in. We handle content creation, scheduling, and engagement across your key platforms so your brand stays active and visible, even when you're heads-down running your business.",
+      "Most small business owners know they should be posting on social media — they just don\'t have the time or bandwidth to do it consistently. That\'s where we come in. We handle content creation, scheduling, and engagement across your key platforms so your brand stays active and visible, even when you\'re heads-down running your business.",
     includes: [
       "Content calendar planning",
       "Platform-native post creation (Facebook, Instagram, LinkedIn)",
@@ -41,7 +41,7 @@ const services = [
     name: "SmallBizHQ — Free AI Marketing Toolkit",
     tagline: "Your unfair advantage. At zero cost.",
     description:
-      "SmallBizHQ is the top of our product ecosystem — and it's completely free. It's an AI-powered marketing toolkit designed specifically for small businesses. Run SEO audits, generate content ideas, analyze competitors, and discover what your customers are actually searching for. No agency required. No credit card needed.",
+      "SmallBizHQ is the top of our product ecosystem — and it\'s completely free. It\'s an AI-powered marketing toolkit designed specifically for small businesses. Run SEO audits, generate content ideas, analyze competitors, and discover what your customers are actually searching for. No agency required. No credit card needed.",
     includes: [
       "AI-powered SEO site audit",
       "Competitor gap analysis",
