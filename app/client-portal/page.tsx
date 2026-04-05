@@ -1,238 +1,190 @@
-import type { Metadata } from "next";
-import Link from "next/link";
+import type { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Client Portal — SD Accelerate",
-  description:
-    "Access your Social Drive client portal. Log in to SD Accelerate to view your marketing reports, content calendar, and account dashboard. Or choose an SD Accelerate package to get started.",
-  alternates: {
-    canonical: "https://www.socialdrivemedia.com/client-portal",
-  },
+  title: 'SD Accelerate — Client Portal | Social Drive',
+  description: 'Access your SD Accelerate dashboard or get started with a Social Drive package today.',
   openGraph: {
-    title: "Client Portal — SD Accelerate",
-    description: "Choose your SD Accelerate package or log in to your dashboard.",
-    url: "https://www.socialdrivemedia.com/client-portal",
+    title: 'SD Accelerate — Client Portal | Social Drive',
+    description: 'Access your SD Accelerate dashboard or choose a package to get started.',
+    url: 'https://www.socialdrivemedia.com/client-portal',
   },
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
+  alternates: { canonical: 'https://www.socialdrivemedia.com/client-portal' },
+}
 
-const packages = [
+const PACKAGES = [
   {
-    name: "Starter",
-    price: "Contact for pricing",
-    description: "Perfect for businesses just getting started with social media management.",
+    name: 'Access',
+    tagline: 'Platform access to get you started',
+    description: 'Streamline your social media management with our powerful platform. Scheduling, analytics, and performance metrics — all in one place.',
+    monthlyPrice: 100,
+    yearlyPrice: 1000,
+    monthlyPriceId: 'price_1Om2JuKYIBz9dddLAkQMI9ke',
+    yearlyPriceId: 'price_1Om2KVKYIBz9dddLU5R1y6ho',
+    highlight: false,
     features: [
-      "Social media management",
-      "Monthly reporting",
-      "1 platform",
+      'SD Accelerate platform access',
+      'Social media scheduling',
+      'Performance analytics dashboard',
+      'Content calendar',
+      'Email support',
     ],
-    accent: "#478ac9",
-    subject: "SD Accelerate Starter Package",
-    popular: false,
   },
   {
-    name: "Growth",
-    price: "Contact for pricing",
-    description: "Everything you need to grow your presence across multiple platforms.",
+    name: 'Plus',
+    tagline: 'Platform + expert guidance',
+    description: 'Elevate your social media game. In addition to full platform access, receive regular check-ins and guidance from our expert team.',
+    monthlyPrice: 175,
+    yearlyPrice: 1750,
+    monthlyPriceId: 'price_1Om2QuKYIBz9dddL7NaFwLfC',
+    yearlyPriceId: 'price_1Om2TEKYIBz9dddLl0B3KJ89',
+    highlight: true,
     features: [
-      "Everything in Starter",
-      "3 platforms",
-      "Weekly reporting",
-      "Content calendar",
+      'Everything in Access',
+      'Regular team check-ins',
+      'Personalized strategy sessions',
+      'Content recommendations',
+      'Priority support',
+      'Monthly performance review',
     ],
-    accent: "#6366f1",
-    subject: "SD Accelerate Growth Package",
-    popular: true,
   },
   {
-    name: "Accelerate",
-    price: "Contact for pricing",
-    description: "The full-service experience with dedicated support and custom strategy.",
+    name: 'Pro',
+    tagline: 'Full-service managed social',
+    description: 'Take your social media to the next level. Dedicated team support, proactive strategies, and ongoing optimization — we drive your digital impact.',
+    monthlyPrice: 300,
+    yearlyPrice: 3000,
+    monthlyPriceId: 'price_1Om2b4KYIBz9dddLQkiECmlK',
+    yearlyPriceId: 'price_1Om2bmKYIBz9dddLgZIRHvdh',
+    highlight: false,
     features: [
-      "Everything in Growth",
-      "Unlimited platforms",
-      "Daily monitoring",
-      "Dedicated account manager",
-      "Custom strategy",
+      'Everything in Plus',
+      'Dedicated account manager',
+      'Proactive content creation',
+      'Ongoing profile optimization',
+      'Competitor monitoring',
+      'Weekly reporting',
+      'Direct team communication',
     ],
-    accent: "#0f172a",
-    subject: "SD Accelerate Accelerate Package",
-    popular: false,
   },
-];
+]
 
 export default function ClientPortalPage() {
   return (
-    <>
+    <main className="min-h-screen bg-white">
+
       {/* Hero */}
-      <section className="gradient-hero pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center w-full">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/80 text-sm font-medium mb-8">
-            <span className="w-2 h-2 rounded-full bg-green-400"></span>
-            SD Accelerate
-          </div>
-          <h1 className="text-5xl font-extrabold text-white tracking-tight mb-6">
-            Choose Your Package
-          </h1>
-          <p className="text-xl text-[#94a3b8] leading-relaxed mb-4">
-            Get started with SD Accelerate — Social Drive&rsquo;s managed marketing program. Select the tier that fits your business and reach out to get going.
-          </p>
-        </div>
+      <section className="bg-slate-900 text-white py-20 px-6 text-center">
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
+          SD Accelerate
+        </h1>
+        <p className="text-lg text-slate-300 max-w-2xl mx-auto mb-8">
+          Choose the plan that fits your business — or log in if you&apos;re already a client.
+        </p>
+        <a
+          href="https://sdaccelerate.cldportal.com/login"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-[#478ac9] hover:bg-[#3a7ab8] text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+        >
+          Log In to SD Accelerate →
+        </a>
       </section>
 
       {/* Packages */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#f8fafc]">
+      <section className="py-20 px-6 bg-slate-50">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-extrabold text-[#0f172a] tracking-tight mb-4">
-              SD Accelerate Packages
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight mb-3">
+              Choose Your Plan
             </h2>
-            <p className="text-lg text-[#64748b] max-w-2xl mx-auto">
-              All packages include direct access to the Social Drive team. Pricing details will be confirmed on your onboarding call.
+            <p className="text-slate-500 text-lg max-w-xl mx-auto">
+              All plans include access to the SD Accelerate platform. Upgrade or cancel anytime.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {packages.map((pkg) => (
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            {PACKAGES.map((pkg) => (
               <div
                 key={pkg.name}
-                className={`bg-white rounded-2xl p-8 border shadow-sm relative overflow-hidden flex flex-col ${
-                  pkg.popular
-                    ? "border-[#6366f1] shadow-lg shadow-[#6366f1]/10"
-                    : "border-[#e2e8f0]"
+                className={`rounded-2xl border p-8 flex flex-col ${
+                  pkg.highlight
+                    ? 'border-[#478ac9] bg-white shadow-xl ring-2 ring-[#478ac9]/20 relative'
+                    : 'border-slate-200 bg-white shadow-sm'
                 }`}
               >
-                {pkg.popular && (
-                  <div className="absolute top-4 right-4">
-                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full text-white bg-[#6366f1]">
-                      Most Popular
-                    </span>
+                {pkg.highlight && (
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#478ac9] text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">
+                    Most Popular
                   </div>
                 )}
                 <div className="mb-6">
-                  <h3 className="text-2xl font-extrabold text-[#0f172a] mb-2">{pkg.name}</h3>
-                  <div className="text-lg font-semibold mb-3" style={{ color: pkg.accent }}>
-                    {pkg.price}
+                  <h3 className="text-xl font-bold text-slate-900 mb-1">SD Accelerate {pkg.name}</h3>
+                  <p className="text-sm text-slate-500 mb-4">{pkg.tagline}</p>
+                  <div className="flex items-baseline gap-1 mb-1">
+                    <span className="text-4xl font-extrabold text-slate-900">${pkg.monthlyPrice}</span>
+                    <span className="text-slate-500 text-sm">/month</span>
                   </div>
-                  <p className="text-sm text-[#64748b] leading-relaxed">{pkg.description}</p>
+                  <p className="text-sm text-slate-400">or ${pkg.yearlyPrice}/year (save ${(pkg.monthlyPrice * 12) - pkg.yearlyPrice})</p>
                 </div>
+
+                <p className="text-slate-600 text-sm mb-6 leading-relaxed">{pkg.description}</p>
+
                 <ul className="space-y-3 mb-8 flex-1">
-                  {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <div
-                        className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5"
-                        style={{ backgroundColor: `${pkg.accent}20` }}
-                      >
-                        <svg
-                          className="w-3 h-3"
-                          fill="none"
-                          stroke={pkg.accent}
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2.5}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                      </div>
-                      <span className="text-sm text-[#374151]">{feature}</span>
+                  {pkg.features.map((f) => (
+                    <li key={f} className="flex items-start gap-3 text-sm text-slate-700">
+                      <span className="text-[#478ac9] font-bold mt-0.5">✓</span>
+                      {f}
                     </li>
                   ))}
                 </ul>
-                <a
-                  href={`mailto:ben@socialdrivemedia.com?subject=${encodeURIComponent(pkg.subject)}`}
-                  className="w-full inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white rounded-xl hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: pkg.accent }}
-                >
-                  Get Started →
-                </a>
+
+                <div className="space-y-3">
+                  <a
+                    href={`https://buy.stripe.com/test_placeholder_${pkg.monthlyPriceId}`}
+                    className={`block text-center font-semibold py-3 px-6 rounded-lg transition-colors ${
+                      pkg.highlight
+                        ? 'bg-[#478ac9] hover:bg-[#3a7ab8] text-white'
+                        : 'bg-slate-900 hover:bg-slate-700 text-white'
+                    }`}
+                  >
+                    Start Monthly — ${pkg.monthlyPrice}/mo
+                  </a>
+                  <a
+                    href={`https://buy.stripe.com/test_placeholder_${pkg.yearlyPriceId}`}
+                    className="block text-center text-sm text-[#478ac9] hover:underline font-medium py-2"
+                  >
+                    Annual plan — ${pkg.yearlyPrice}/yr
+                  </a>
+                </div>
               </div>
             ))}
           </div>
 
-          {/* Already a client */}
-          <div className="mt-16 text-center">
-            <p className="text-[#64748b] mb-4">Already a client?</p>
-            <a
-              href="https://sdaccelerate.cldportal.com/login"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white rounded-2xl gradient-accent hover:opacity-90 transition-opacity shadow-lg shadow-[#478ac9]/30"
-            >
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
-              </svg>
-              Log In to SD Accelerate
-            </a>
-            <p className="mt-3 text-sm text-[#64748b]">
-              Opens in a new tab →{" "}
-              <span className="font-mono text-[#94a3b8]">sdaccelerate.cldportal.com</span>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* What's in the portal */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-[#e2e8f0]">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-extrabold text-[#0f172a] text-center mb-12">
-            What You&rsquo;ll Find in Your Dashboard
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { icon: "📊", title: "Performance Reports", desc: "Monthly marketing reports with real data on what's working." },
-              { icon: "📅", title: "Content Calendar", desc: "See what's scheduled and upcoming across all your platforms." },
-              { icon: "📈", title: "Campaign Tracking", desc: "Follow your campaigns from launch through results." },
-              { icon: "💬", title: "Direct Communication", desc: "Message the Social Drive team directly without digging through email threads." },
-            ].map((item) => (
-              <div key={item.title} className="bg-[#f8fafc] rounded-2xl p-6 border border-[#e2e8f0] text-center">
-                <div className="text-3xl mb-3">{item.icon}</div>
-                <h3 className="text-sm font-bold text-[#0f172a] mb-2">{item.title}</h3>
-                <p className="text-xs text-[#64748b] leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Need help */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f8fafc] border-t border-[#e2e8f0]">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl font-extrabold text-[#0f172a] mb-4">Having Trouble Logging In?</h2>
-          <p className="text-[#64748b] mb-8">
-            If you&rsquo;ve lost access to your SD Accelerate account or need help getting set up, reach out to Matt directly. We&rsquo;ll get you back in within one business day.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white rounded-xl gradient-accent hover:opacity-90 transition-opacity"
-            >
-              Contact Support
-            </Link>
-            <a
-              href="mailto:ben@socialdrivemedia.com"
-              className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-[#0f172a] rounded-xl border border-[#e2e8f0] hover:bg-white transition-colors"
-            >
-              Email Us Directly
-            </a>
-          </div>
-          <p className="mt-6 text-sm text-[#64748b]">
-            Not a client yet?{" "}
-            <a href="https://smallbizhq.co" target="_blank" rel="noopener noreferrer" className="text-[#478ac9] hover:underline">
-              Start free with SmallBizHQ
-            </a>{" "}
-            or{" "}
-            <Link href="/services" className="text-[#478ac9] hover:underline">
-              explore our services
-            </Link>
-            .
+          <p className="text-center text-slate-400 text-sm mt-10">
+            Questions?{' '}
+            <a href="mailto:ben@socialdrivemedia.com" className="text-[#478ac9] hover:underline">
+              Email us
+            </a>{' '}
+            — we&apos;re happy to help you pick the right plan.
           </p>
         </div>
       </section>
-    </>
-  );
+
+      {/* Existing clients */}
+      <section className="py-16 px-6 bg-slate-900 text-center">
+        <h2 className="text-2xl font-bold text-white mb-3">Already a Client?</h2>
+        <p className="text-slate-400 mb-6">Log in to your SD Accelerate dashboard to manage your account.</p>
+        <a
+          href="https://sdaccelerate.cldportal.com/login"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-[#478ac9] hover:bg-[#3a7ab8] text-white font-semibold px-8 py-3 rounded-lg transition-colors"
+        >
+          Log In to SD Accelerate →
+        </a>
+      </section>
+
+    </main>
+  )
 }
