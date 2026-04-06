@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "next/link"
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Matt Baer & Social Drive",
@@ -180,6 +181,19 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0f172a]">
         <div className="max-w-3xl mx-auto text-center">
+
+          <div className="flex justify-center mb-12">
+            <div className="relative w-64 h-64 rounded-2xl overflow-hidden shadow-xl border-4 border-[#478ac9]/20">
+              <Image
+                src="/images/matt.jpg"
+                alt="Matt Baer — Founder of Social Drive"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
+
           <h2 className="text-3xl font-extrabold text-white mb-4">Ready to work with someone who actually gets it?</h2>
           <p className="text-[#94a3b8] mb-8">
             Start free with SmallBizHQ or reach out directly. Either way, we&rsquo;d love to hear about your business.
