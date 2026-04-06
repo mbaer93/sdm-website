@@ -50,6 +50,17 @@ const products = [
     accent: "#0f172a",
     badge: "Full Service",
   },
+  {
+    icon: "⚡",
+    name: "SD Accelerate",
+    tagline: "Social Media Management Platform",
+    description:
+      "Our flagship client platform for hands-on social media management. Get scheduling, analytics, expert guidance, and a dedicated team — all from one dashboard.",
+    price: "From $100/mo",
+    href: "/client-portal",
+    accent: "#478ac9",
+    badge: "Client Platform",
+  },
 ];
 
 const whyUs = [
