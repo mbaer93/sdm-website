@@ -41,17 +41,6 @@ const products = [
   },
   {
     icon: "⚡",
-    name: "Forge",
-    tagline: "AI-Powered Managed Marketing",
-    description:
-      "Let us handle it. Forge is our done-for-you AI marketing system — content, strategy, posting, and reporting — all automated and managed by our team so you can focus on your business.",
-    price: "From $97/mo",
-    href: "/services#forge",
-    accent: "#0f172a",
-    badge: "Full Service",
-  },
-  {
-    icon: "⚡",
     name: "SD Accelerate",
     tagline: "Social Media Management Platform",
     description:
@@ -188,7 +177,7 @@ export default function HomePage() {
               The Social Drive Product Suite
             </h2>
             <p className="text-lg text-[#64748b] max-w-2xl mx-auto">
-              One ecosystem. Three tools. A complete path from &ldquo;just getting started&rdquo; to fully automated marketing.
+              One ecosystem. Three products. A complete path from &ldquo;just getting started&rdquo; to fully managed marketing.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">

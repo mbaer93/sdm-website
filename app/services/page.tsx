@@ -72,25 +72,7 @@ const services = [
     price: "$97 – $297",
     accent: "#6366f1",
   },
-  {
-    id: "forge",
-    icon: "⚡",
-    name: "Forge — AI-Powered Managed Marketing",
-    tagline: "Your marketing. Fully automated. Fully managed.",
-    description:
-      "Forge is the most hands-off way to have a world-class marketing operation running for your small business. We combine AI automation with human oversight to deliver content, strategy, posting, and reporting — every single month. You focus on your business. We handle the rest.",
-    includes: [
-      "Monthly content strategy built by AI, refined by humans",
-      "Automated social media posting across all platforms",
-      "AI-driven blog content (SEO-optimized)",
-      "Monthly performance dashboard and reporting",
-      "Quarterly strategy review calls",
-      "Priority support and direct access to Matt",
-    ],
-    cta: { label: "Apply for Forge", href: "/contact" },
-    price: "From $97/mo (Pilot) · $497/mo (Pro)",
-    accent: "#0f172a",
-  },
+
 ];
 
 export default function ServicesPage() {
