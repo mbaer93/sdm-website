@@ -191,7 +191,7 @@ export default function HomePage() {
               One ecosystem. Three tools. A complete path from &ldquo;just getting started&rdquo; to fully automated marketing.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
             {products.map((product) => (
               <div
                 key={product.name}

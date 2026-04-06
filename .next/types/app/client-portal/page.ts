@@ -1,4 +1,4 @@
-// File: /tmp/sdm-website/app/client-portal/page.tsx
+// File: /tmp/sdm-build/app/client-portal/page.tsx
 import * as entry from '../../../../app/client-portal/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

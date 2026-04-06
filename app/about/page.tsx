@@ -93,7 +93,7 @@ export default function AboutPage() {
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Photo placeholder */}
+            {/* Photo */}
             <div className="order-2 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden aspect-square max-w-md mx-auto shadow-xl border-4 border-[#478ac9]/20">
                 <Image
@@ -104,6 +104,7 @@ export default function AboutPage() {
                   priority
                 />
               </div>
+              <div className="text-center mt-4">
                 <p className="text-lg font-bold text-[#0f172a]">Matt Baer</p>
                 <p className="text-sm text-[#64748b] mt-1">Founder & CEO</p>
                 <p className="text-xs text-[#94a3b8] mt-1">Greencastle, PA</p>

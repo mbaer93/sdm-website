@@ -1,4 +1,4 @@
-// File: /tmp/sdm-website/app/services/page.tsx
+// File: /tmp/sdm-build/app/services/page.tsx
 import * as entry from '../../../../app/services/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
